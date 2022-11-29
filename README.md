@@ -27,3 +27,6 @@ Dentro de /etc/hosts edito el nombre de localhost a "centro.intranet"
 ![image](https://user-images.githubusercontent.com/91189372/204491258-aa6d7c63-d71b-4b74-b30b-5cbffabfbf3c.png)
 
 ![image](https://user-images.githubusercontent.com/91189372/204493404-371101c1-e8b9-41fa-a167-1fda5d79f3c2.png)
+
+ç![image](https://user-images.githubusercontent.com/91189372/204494253-93ddfd1b-30ea-48bd-8c11-5cd2bb960c38.png)
+
