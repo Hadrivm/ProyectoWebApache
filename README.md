@@ -4,7 +4,7 @@
 **- Instalación del servidor web apache. Usaremos dos dominios mediante el archivo hosts: centro.intranet y departamentos.centro.intranet. El primero servirá el contenido mediante wordpress y el segundo una aplicación en python**
 
 Para ello instalo apache en la máquina virtual de Ubuntu con:
-```
+```bash
 sudo apt-get update
 sudo apt-get install apache2
 ```
@@ -33,5 +33,8 @@ Dentro de /etc/hosts edito el nombre de localhost a "centro.intranet"
 ![image](https://user-images.githubusercontent.com/91189372/204619865-5f2d72aa-0e93-470f-8f48-d4fa4e072ee4.png)
 
 ![image](https://user-images.githubusercontent.com/91189372/204621253-c243da06-c971-45f4-bb28-f58daece7149.png)
+
+![image](https://user-images.githubusercontent.com/91189372/204622326-33928b90-4865-4823-a3e9-cdc11fed11d4.png)
+
 
 
