@@ -59,9 +59,6 @@ nano hosts
 ![image](https://user-images.githubusercontent.com/91189372/204862961-6fa37ed0-2568-4406-8215-4a60dd2d9f6a.png)
 
 
-Dentro de /etc/hosts edito el nombre de localhost a "centro.intranet"
-
-![image](https://user-images.githubusercontent.com/91189372/204242753-cce319e1-b4c1-47c4-84c3-c5f0378e927f.png)
 
 
 ![image](https://user-images.githubusercontent.com/91189372/203992940-8a35f71a-5c66-4f58-a4b2-30b61ea96848.png)
