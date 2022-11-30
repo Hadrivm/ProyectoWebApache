@@ -20,7 +20,7 @@ Debo permitir el tráfico web de apache:
 ufw app list
 ```
 
-https://i.gyazo.com/8c200ddae2d9bcf5fab04fa356f3c920.png
+![image](https://user-images.githubusercontent.com/91189372/204860207-3b120006-ff2c-41ad-bd76-73f29e00aa7d.png)
 
 ![image](https://user-images.githubusercontent.com/91189372/204859449-50560a95-623b-4c41-bff4-8d0de019dc52.png)
 
