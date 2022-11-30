@@ -97,6 +97,16 @@ a2ensite centro.intranet.conf
 systemctl restart apache2
 ```
 
+Después desactivo el fichero de configuración 000-default,conf y reincio
+
+```bash
+a2dissite 000-default.conf
+systemctl restart apache2
+```
+
+![image](https://user-images.githubusercontent.com/91189372/204868030-b91873fe-6c5e-422b-98e7-b845889afd87.png)
+
+
 ![image](https://user-images.githubusercontent.com/91189372/204246941-635d4a4d-593b-41d1-82dd-d1fa66d6355c.png)
 
 ![image](https://user-images.githubusercontent.com/91189372/204489954-2b251650-6d28-4c84-8558-cf1b773398a8.png)
