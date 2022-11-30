@@ -154,9 +154,15 @@ mysql
 
 ## Instalar Wordpress
 
-Accedo a la web oficial www.wordpres.org/downloads y la descargo desde allí
+Accedo a la web oficial wordpres y la descargo desde allí
 
 ![image](https://user-images.githubusercontent.com/91189372/204874446-f774b726-d1cb-44e2-a693-3374313a2cee.png)
+
+Ahora descomprimo el fichero y instalo WordPress. Me muevo hasta la ubicación donde este el fichero descargado
+
+```bash
+cd /home/hadrian/Descargas
+```
 
 
 
