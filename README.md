@@ -24,7 +24,13 @@ ufw app list
 
 ![image](https://user-images.githubusercontent.com/91189372/204860207-3b120006-ff2c-41ad-bd76-73f29e00aa7d.png)
 
+Compruebo que funciona apache, desde el navegador accedo con localhost o con la IP
 
+```
+http:\\127.0.0.1
+```
+
+![image](https://user-images.githubusercontent.com/91189372/204860829-6f040517-e1ec-44cb-ab23-d028ce8a2495.png)
 
 
 Dentro de /etc/hosts edito el nombre de localhost a "centro.intranet"
