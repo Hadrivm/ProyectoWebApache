@@ -102,4 +102,21 @@ systemctl restart apache2
 
 ![image](https://user-images.githubusercontent.com/91189372/204868030-b91873fe-6c5e-422b-98e7-b845889afd87.png)
 
+## Instalación PHP
+
+Para instalar PHP uso el siguiente comando:
+
+```bash
+apt install php libapache2-mod-php php-mysql
+```
+
+Después debo cambiar el orden en el que el servidor da preeferncia a los archivos, apra que priorice los archivos php a html
+
+```bash
+nano /etc/apache2/mods-enabled/dir.conf
+```
+
+![image](https://user-images.githubusercontent.com/91189372/204871335-6bc0f7ba-0ff0-4a05-976e-f85b77c98a7e.png)
+
+
 
