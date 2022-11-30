@@ -119,4 +119,28 @@ nano /etc/apache2/mods-enabled/dir.conf
 ![image](https://user-images.githubusercontent.com/91189372/204871335-6bc0f7ba-0ff0-4a05-976e-f85b77c98a7e.png)
 
 
+## Instalar MySQL
 
+Lo instalo con el paquete apt
+
+```bash
+apt update
+```
+
+Después instalo el paquete específico
+
+```bash
+apt install mysql-server
+```
+
+Configuro el script de seguridad de mysql
+
+```bash
+mysql_secure_installation
+```
+
+Pulso y + enter, 1 y establezco la contraseña
+
+![image](https://user-images.githubusercontent.com/91189372/204873546-9c405fc6-d707-479d-a496-c5358eb979a7.png)
+
+Voy pulsando y + enter hasta terminar
