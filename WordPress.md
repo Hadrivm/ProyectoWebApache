@@ -143,4 +143,21 @@ Pulso y + enter, 1 y establezco la contraseña
 
 ![image](https://user-images.githubusercontent.com/91189372/204873546-9c405fc6-d707-479d-a496-c5358eb979a7.png)
 
-Voy pulsando y + enter hasta terminar
+Voy pulsando y + enter hasta terminar. Con mysql entro
+
+```bash
+mysql
+```
+
+![image](https://user-images.githubusercontent.com/91189372/204874023-336831c7-3a38-4484-bebb-f3b41c574f8e.png)
+
+
+## Instalar Wordpress
+
+Accedo a la web oficial www.wordpres.org/downloads y la descargo desde allí
+
+![image](https://user-images.githubusercontent.com/91189372/204874446-f774b726-d1cb-44e2-a693-3374313a2cee.png)
+
+
+
+
