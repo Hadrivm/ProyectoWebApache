@@ -8,6 +8,13 @@ Para ello instalo apache en la máquina virtual de Ubuntu con:
 sudo apt-get update
 sudo apt-get install apache2
 ```
+Una vez instalado apache compruebo su estado
+
+```bash
+systemctl status apache2
+```
+
+
 
 Dentro de /etc/hosts edito el nombre de localhost a "centro.intranet"
 
