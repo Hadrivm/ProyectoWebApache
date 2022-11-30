@@ -12,10 +12,10 @@
 
 *- Activar el módulo “wsgi” para permitir la ejecución de aplicaciones Python*
 
-*- Crea y despliega una pequeña aplicación python para comprobar que funciona correctamente.
+*- Crea y despliega una pequeña aplicación python para comprobar que funciona correctamente.*
 
-*- Adicionalmente protegeremos el acceso a la aplicación python mediante autenticación
+*- Adicionalmente protegeremos el acceso a la aplicación python mediante autenticación*
 
-*- Instala y configura awstat.
+*- Instala y configura awstat.*
 
-*- Instala un segundo servidor de tu elección (nginx, lighttpd) bajo el dominio “servidor2.centro.intranet”. Debes configurarlo para que sirva en el puerto 8080 y haz los cambios necesarios para ejecutar php. Instala phpmyadmin
+*- Instala un segundo servidor de tu elección (nginx, lighttpd) bajo el dominio “servidor2.centro.intranet”. Debes configurarlo para que sirva en el puerto 8080 y haz los cambios necesarios para ejecutar php. Instala phpmyadmin*
