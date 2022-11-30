@@ -79,6 +79,17 @@ cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/ce
 
 ![image](https://user-images.githubusercontent.com/91189372/204865854-0a17bde3-fd3e-4fda-a502-38c655c53abf.png)
 
+Edito el fichero de configuracion centro.intranet.conf 
+
+```bash
+cd /etc/apache2/sites-available/
+nano centro.intranet.conf
+```
+
+El fichero queda de la siguiente manera, modificando ServerName, DocumentRoot
+
+![image](https://user-images.githubusercontent.com/91189372/204866984-a76810f3-886f-4248-9c5c-e9e92c552772.png)
+
 
 ![image](https://user-images.githubusercontent.com/91189372/204246941-635d4a4d-593b-41d1-82dd-d1fa66d6355c.png)
 
