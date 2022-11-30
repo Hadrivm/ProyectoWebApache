@@ -32,6 +32,32 @@ http:\\127.0.0.1
 
 ![image](https://user-images.githubusercontent.com/91189372/204860829-6f040517-e1ec-44cb-ab23-d028ce8a2495.png)
 
+Creo el direcotrio centro.intranet en /var/www/centro.intranet
+
+```bash
+mkdir /var/www/centro.intranet
+```
+
+![image](https://user-images.githubusercontent.com/91189372/204861760-b168f723-fed4-4a8a-b711-ab9855edf235.png)
+
+Para saber la dirección IP del servidor uso
+
+```bash
+hostname -I
+```
+
+![image](https://user-images.githubusercontent.com/91189372/204862773-0e465124-5aa8-4872-b0c9-8a3b52c510bb.png)
+
+
+Ahora edito el fichero hosts para añadir el dominio centro.intranet y una dirección IP
+
+```bash
+cd /etc
+nano hosts
+```
+
+![image](https://user-images.githubusercontent.com/91189372/204862961-6fa37ed0-2568-4406-8215-4a60dd2d9f6a.png)
+
 
 Dentro de /etc/hosts edito el nombre de localhost a "centro.intranet"
 
