@@ -90,6 +90,12 @@ El fichero queda de la siguiente manera, modificando ServerName, DocumentRoot
 
 ![image](https://user-images.githubusercontent.com/91189372/204866984-a76810f3-886f-4248-9c5c-e9e92c552772.png)
 
+Ahora habilito el fichero de configuración creado y reincio apache
+
+```bash
+a2ensite centro.intranet.conf
+systemctl restart apache2
+```
 
 ![image](https://user-images.githubusercontent.com/91189372/204246941-635d4a4d-593b-41d1-82dd-d1fa66d6355c.png)
 
