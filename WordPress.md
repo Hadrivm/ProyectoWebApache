@@ -164,6 +164,16 @@ Ahora descomprimo el fichero y instalo WordPress. Me muevo hasta la ubicación d
 cd /home/hadrian/Descargas
 ```
 
+Cambio los permisos del directorio centro.intranet
+
+```bash
+chown -R www-data:www-data centro.intranet
+ls -l
+```
+
+![image](https://user-images.githubusercontent.com/91189372/204880676-b8108d26-c231-45d1-a791-5ccc8c903c54.png)
+
+
 
 
 
