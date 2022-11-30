@@ -71,9 +71,14 @@ cd /var/www/centro.intranet
 nano index.html
 ```
 
+Creo el archivo de host virtual para centro.intranet. Para ello copio 000-default.conf a mi nuevo dominio centro.intranet
 
+```bash
+cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/centro.intranet.conf
+```
 
-![image](https://user-images.githubusercontent.com/91189372/203992940-8a35f71a-5c66-4f58-a4b2-30b61ea96848.png)
+![image](https://user-images.githubusercontent.com/91189372/204865854-0a17bde3-fd3e-4fda-a502-38c655c53abf.png)
+
 
 ![image](https://user-images.githubusercontent.com/91189372/204246941-635d4a4d-593b-41d1-82dd-d1fa66d6355c.png)
 
