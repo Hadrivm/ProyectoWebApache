@@ -14,6 +14,7 @@ Una vez instalado apache compruebo su estado
 systemctl status apache2
 ```
 
+![image](https://user-images.githubusercontent.com/91189372/204859449-50560a95-623b-4c41-bff4-8d0de019dc52.png)
 
 
 Dentro de /etc/hosts edito el nombre de localhost a "centro.intranet"
