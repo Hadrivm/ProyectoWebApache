@@ -173,6 +173,36 @@ ls -l
 
 ![image](https://user-images.githubusercontent.com/91189372/204880676-b8108d26-c231-45d1-a791-5ccc8c903c54.png)
 
+Ahora creo una base de datos con mysql para wordpress, un usuario y sus privilegios
+
+```bash
+mysql -u root -p
+CREATE DATABASE wordpress;
+CREATE USER 'wordpressuser'@'localhost' IDENTIFIED BY 'H7craft YT';
+GRANT ALL PRIVILEGES ON wordpress*. TO 'wordpressuser'@'localhost';
+```
+
+Ahora accedo desde el navegador a centro.intranet y aparecerá la página de wordpress
+
+![image](https://user-images.githubusercontent.com/91189372/204883326-1688364c-52df-4e0a-a459-f176e2ecd6a0.png)
+
+Añado mis credenciales previamente creadas y empiezo el proceso de isntalación
+
+![image](https://user-images.githubusercontent.com/91189372/204883820-d46cbfd0-5cb4-4780-9605-21ad435ed1f3.png)
+
+Especifico el nombre del dominio, del usuario y la contraseña
+
+![image](https://user-images.githubusercontent.com/91189372/204884143-9c588ba0-bff5-43ec-ac39-412dbcba3037.png)
+
+Al finalizar la instalación, accedo con total normalidad
+
+![image](https://user-images.githubusercontent.com/91189372/204884322-09cf03f1-a92a-4c32-80e1-522a6a0f32b3.png)
+
+
+
+
+
+
 
 
 
