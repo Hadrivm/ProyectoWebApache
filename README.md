@@ -58,6 +58,18 @@ nano hosts
 
 ![image](https://user-images.githubusercontent.com/91189372/204862961-6fa37ed0-2568-4406-8215-4a60dd2d9f6a.png)
 
+Ahora debo crear el directorio /var/www/centro.intranet
+
+```bash
+mkdir /var/www/centro.intranet
+```
+
+Y en su interior creo un fichero index.html 
+
+```bash
+cd /var/www/centro.intranet
+nano index.html
+```
 
 
 
