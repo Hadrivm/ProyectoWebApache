@@ -14,6 +14,14 @@ Una vez instalado apache compruebo su estado
 systemctl status apache2
 ```
 
+Debo permitir el tráfico web de apache:
+
+```bash
+ufw app list
+```
+
+https://i.gyazo.com/8c200ddae2d9bcf5fab04fa356f3c920.png
+
 ![image](https://user-images.githubusercontent.com/91189372/204859449-50560a95-623b-4c41-bff4-8d0de019dc52.png)
 
 
