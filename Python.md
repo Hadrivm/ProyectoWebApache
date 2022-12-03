@@ -63,3 +63,21 @@ Ahora dentro del directorio departamentos.centro.intranet voy a dividir su arqui
 
 2. Destinada a servir la aplicación (directorio público servido) en el cuál solo almacenaremos archivos estáticos.
 
+```bash
+sudo mkdir /var/www/departementos.centro.intranet/mypythonapp
+sudo mkdir /var/www/departementos.centro.intranet/public_html
+```
+
+![image](https://user-images.githubusercontent.com/91189372/205459135-eea8c166-26bd-421b-92c5-f471ba2935a0.png)
+
+Aprovecharemos este paso, para crear una carpeta, destinada a almacenar los logs de errores y accesos a nuestra Web App
+
+```bash
+sudo mkdir /var/www/departementos.centro.intranet/logs
+```
+
+Ahora debo crear un controlador para la aplicación. Dicho módulo, solo se encargará de definir una función, que actúe con cada petición del usuario. Esta función, deberá ser una función WSGI aplicación válida. 
+
+```bash
+echo '# -*- coding: utf-8 -*-' > mypythonapp/controller.py
+```
