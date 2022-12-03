@@ -85,3 +85,14 @@ echo '# -*- coding: utf-8 -*-' > mypythonapp/controller.py
 
 ![image](https://user-images.githubusercontent.com/91189372/205459407-6fdf2b97-438f-4966-bdad-e81afcac5f09.png)
 
+Ahora configuro el script de Pyhton
+
+```bash
+cd /var/www/departamentos.centro.intranet/mypythonapp
+nano controller.py
+```
+Y creo el siguiente script
+
+![image](https://user-images.githubusercontent.com/91189372/205459617-1782ca91-b19a-45c6-81bf-4b045af0150f.png)
+
+
