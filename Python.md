@@ -33,3 +33,33 @@ nano departamentos.centro.conf
 Editando el interior de la siguiente manera:
 
 ![image](https://user-images.githubusercontent.com/91189372/205456228-ccb924e3-7dc7-4140-925d-62e361e0ffec.png)
+
+# Instalación y configuración Python
+
+El primer paso es instalar python3
+
+```bash
+sudo apt update
+sudo apt install python3
+```
+
+Con python3 compruebo que está instalado
+
+![image](https://user-images.githubusercontent.com/91189372/205458523-d6c3ac00-ef58-490b-987f-74586d2e80bd.png)
+
+En principio, necesitamos hacer que Apache, incorpore un soporte para servir archivos Python. Para ello, necesitaremos habilitarle un módulo, que brinde este soporte.
+
+Para habilitar mod_wsgi en Apache, basta con instalar el paquete libapache2-mod-wsgi:
+
+```bash
+sudo apt-get install libapache2-mod-wsgi-py3
+```
+
+![image](https://user-images.githubusercontent.com/91189372/205458994-da1de7bf-2dc3-401c-a431-488f8a9c265e.png)
+
+Ahora dentro del directorio departamentos.centro.intranet voy a dividir su arquitectura en dos partes:
+
+1. Destinada al almacenaje de nuestra aplicación Python pura (será un directorio privado, no servido).
+
+2. Destinada a servir la aplicación (directorio público servido) en el cuál solo almacenaremos archivos estáticos.
+
