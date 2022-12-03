@@ -95,4 +95,13 @@ Y creo el siguiente script
 
 ![image](https://user-images.githubusercontent.com/91189372/205459617-1782ca91-b19a-45c6-81bf-4b045af0150f.png)
 
+Ahora debo configurar el fichero virtual host de la siguiente manera:
+
+```bash
+cd /etc/apache2/sites-available
+nano python-web
+```
+
+![image](https://user-images.githubusercontent.com/91189372/205459911-3eb5da97-fd45-4ff4-be2f-ac3c92b3ce3e.png)
+
 
