@@ -23,3 +23,13 @@ nano hosts
 Y en su interior asigno la misma ip que el primer dominio a departamentos.centro.intranet
 
 ![image](https://user-images.githubusercontent.com/91189372/205455814-59505634-1708-4aaa-b5ce-9ec485d887e1.png)
+
+A su vez, debo crear el fichero de configuración de este nuevo dominio y configurarlo
+
+```bash
+cd /etc/apache2/sites-available/
+nano departamentos.centro.conf
+```
+Editando el interior de la siguiente manera:
+
+![image](https://user-images.githubusercontent.com/91189372/205456228-ccb924e3-7dc7-4140-925d-62e361e0ffec.png)
