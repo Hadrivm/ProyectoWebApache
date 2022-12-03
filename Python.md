@@ -79,5 +79,9 @@ sudo mkdir /var/www/departementos.centro.intranet/logs
 Ahora debo crear un controlador para la aplicación. Dicho módulo, solo se encargará de definir una función, que actúe con cada petición del usuario. Esta función, deberá ser una función WSGI aplicación válida. 
 
 ```bash
+cd /var/www/departamentos.centro.intranet
 echo '# -*- coding: utf-8 -*-' > mypythonapp/controller.py
 ```
+
+![image](https://user-images.githubusercontent.com/91189372/205459407-6fdf2b97-438f-4966-bdad-e81afcac5f09.png)
+
