@@ -20,4 +20,6 @@ cd /etc/
 nano hosts
 ```
 
+Y en su interior asigno la misma ip que el primer dominio a departamentos.centro.intranet
+
 ![image](https://user-images.githubusercontent.com/91189372/205455814-59505634-1708-4aaa-b5ce-9ec485d887e1.png)
