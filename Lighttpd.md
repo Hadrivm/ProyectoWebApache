@@ -20,6 +20,7 @@ Lighttpd se gestiona como un servicio del sistema, y por tanto vamos a poder ini
 
 ```bash
 systemctl start lighttpd
+ssytemctl status lighttpd
 ```
 
 ![image](https://user-images.githubusercontent.com/91189372/205490968-0df7cfe2-6502-49b2-a521-10aad49636f2.png)
@@ -31,3 +32,32 @@ http://127.0.0.1/index.lighttpd.html
 ```
 
 ![image](https://user-images.githubusercontent.com/91189372/205491658-d1fe30f2-dd10-4bdc-96c3-c5465288d718.png)
+
+# Fichero de configuración de servidor2.centro.intranet
+
+Creo el directorio correspondiente al nuevo dominio
+
+```bash
+mkdir -p /var/www/servidor2.centro.intranet/html
+```
+
+Para el correcto funcionamiento del servidor, debo  crear un ficheeo de configuración de lighttpd, en mi caso copiare el fichero por defecto y lo modificare con el siguiente comando:
+
+```bash
+cp /etc/lighttpd/lighttpd.conf /etc/lighttpd/servidor2.centro.conf
+```
+
+Modifico el interior del fichero de configuración
+
+```bash
+cd /etc/lighttpd/
+nano servidor2.centro.conf
+```
+
+Modifico el documentRoot y el puerto, lo cambio al 8080
+
+![image](https://user-images.githubusercontent.com/91189372/205492505-9df3f9ef-ff19-431e-b52f-826426144d3b.png)
+
+
+# Añadir soporte PHP a Lighttpd
+
