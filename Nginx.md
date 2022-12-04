@@ -118,5 +118,14 @@ Reinicio Nginx para habilitar sus cambios:
 systemctl restart nginx
 ```
 
+Ahora desde el navegador
+
+```
+http://servidor2.centro.intranet:8080
+```
+
+![image](https://user-images.githubusercontent.com/91189372/205499016-21071526-341f-46fb-a099-c994353c1075.png)
+
+
 
 
