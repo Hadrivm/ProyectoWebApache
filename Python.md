@@ -102,6 +102,14 @@ cd /etc/apache2/sites-available
 nano ddepartamentos.centro.conf
 ```
 
-![image](https://user-images.githubusercontent.com/91189372/205459911-3eb5da97-fd45-4ff4-be2f-ac3c92b3ce3e.png)
+![image](https://user-images.githubusercontent.com/91189372/205488847-1d4e2d1b-25e3-4d61-99e1-6d96b30f58f4.png)
+
+Después habilito el nuevo sitio y recargo apache para aplicar los cambios
+
+```bash
+a2ensite departamentos.centro.conf
+service apache2 reload
+```
+
 
 
