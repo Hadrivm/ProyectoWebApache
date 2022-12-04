@@ -1,13 +1,22 @@
 
-# Instalación Lighttpd
+# Instalación Nginx
 
 A continuación voy a instalar el servidor Lighttpd para crear mi segundo dominio servidor2.centro.intranet
 
-Para ello accedo con sudo su e instala el paquete Lighttpd
+Para ello accedo con sudo su e instala el paquete nginx
 
 ```bash
 sudo su
-apt install lighttpd
+apt update
+apt install nginx
+```
+
+Configuro el firewall.
+
+Obtengo una lista de las configuraciones de las aplicaciones con las que ufw sabe trabajar escribiendo:
+
+```bash
+ufw app list
 ```
 
 Antes de iniciar lighttpd, debo apagar el servicio apache2:
@@ -57,6 +66,16 @@ nano servidor2.centro.conf
 Modifico el documentRoot y el puerto, lo cambio al 8080
 
 ![image](https://user-images.githubusercontent.com/91189372/205492505-9df3f9ef-ff19-431e-b52f-826426144d3b.png)
+
+Modifico el fichero hosts para asignarle una ip a servidor2.centro.intranet, para ello:
+
+```bash
+nano /etc/hosts
+```
+
+![image](https://user-images.githubusercontent.com/91189372/205492710-2810df60-8111-4b43-9742-611c78c619ca.png)
+
+
 
 
 # Añadir soporte PHP a Lighttpd
