@@ -1,7 +1,7 @@
 
 # Instalación Nginx
 
-A continuación voy a instalar el servidor Lighttpd para crear mi segundo dominio servidor2.centro.intranet
+A continuación voy a instalar el servidor Nginx para crear mi segundo dominio servidor2.centro.intranet
 
 Para ello accedo con sudo su e instala el paquete nginx
 
@@ -19,64 +19,104 @@ Obtengo una lista de las configuraciones de las aplicaciones con las que ufw sab
 ufw app list
 ```
 
-Antes de iniciar lighttpd, debo apagar el servicio apache2:
+Una vez instalado, doy privilegios a nginx en el firewall:
+
+```bash
+ufw allow 'Nginx HTTP'
+```
+
+Antes de iniciar nginx, debo apagar el servicio apache2:
 
 ```bash
 systemctl stop apache2
+systemctl start nginx
 ```
 
-Lighttpd se gestiona como un servicio del sistema, y por tanto vamos a poder iniciarlo escribiendo en la terminal:
 
-```bash
-systemctl start lighttpd
-ssytemctl status lighttpd
-```
-
-![image](https://user-images.githubusercontent.com/91189372/205490968-0df7cfe2-6502-49b2-a521-10aad49636f2.png)
-
-Para comprobar el correcto funcionamiento del servidor, accedo desde un navegador web con la siguiente URL
-
-```
-http://127.0.0.1/index.lighttpd.html
-```
-
-![image](https://user-images.githubusercontent.com/91189372/205491658-d1fe30f2-dd10-4bdc-96c3-c5465288d718.png)
-
-# Fichero de configuración de servidor2.centro.intranet
-
-Creo el directorio correspondiente al nuevo dominio
+A continuación, creo la carpeta para el servidor2.centro.intranet
 
 ```bash
 mkdir -p /var/www/servidor2.centro.intranet/html
 ```
 
-Para el correcto funcionamiento del servidor, debo  crear un ficheeo de configuración de lighttpd, en mi caso copiare el fichero por defecto y lo modificare con el siguiente comando:
+Posteriormente, asigno la titularidad del directorio con la variable de entorno $USER:
 
 ```bash
-cp /etc/lighttpd/lighttpd.conf /etc/lighttpd/servidor2.centro.conf
+chown -R $USER:$USER /var/www/servidor2.centro.intranet/html
+chmod -R 755 /var/www/servidor2.centro.intranet
 ```
 
-Modifico el interior del fichero de configuración
+Creo una página inex para la web 
+
+```
+cd /var/www/servidor2.centro.intranet/html
+nano index.html
+```
+
+Creo el fichero de directiva
 
 ```bash
-cd /etc/lighttpd/
-nano servidor2.centro.conf
+cd /etc/nginx/sites-available/
+nano servidor2.centro.intranet
 ```
 
-Modifico el documentRoot y el puerto, lo cambio al 8080
-
-![image](https://user-images.githubusercontent.com/91189372/205492505-9df3f9ef-ff19-431e-b52f-826426144d3b.png)
-
-Modifico el fichero hosts para asignarle una ip a servidor2.centro.intranet, para ello:
+En su interior escribo lo siguiente:
 
 ```bash
-nano /etc/hosts
+server {
+        listen 8080;
+        listen [::]:8080;
+
+        root /var/www/servidor2.centro.intranet/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name servidor2.centro.intranet www.servidor2.centro.intranet;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
 ```
 
-![image](https://user-images.githubusercontent.com/91189372/205492710-2810df60-8111-4b43-9742-611c78c619ca.png)
+Después, voya habilitar el archivo creando un enlace desde el mismo al directorio sites-enabled (habilitado para sitios), el cual Nginx usa para leer durante el inicio
 
 
+```bash
+ln -s /etc/nginx/sites-available/servidor2.centro.intranet /etc/nginx/sites-enabled/
+```
+
+Ahora, debo ajustar un solo valor en el archivo /etc/nginx/nginx.conf para evitar un posible problema de memoria de hash bucket, el que puede surgir al agregar nombres de servidores adicionales. Abro el archivo:
+
+```bash
+nano /etc/nginxnginx.conf
+```
+
+Busco la directiva server_names_hash_bucket_size y quite el símbolo # para descomentar la línea:
+
+```bash
+...
+http {
+    ...
+    server_names_hash_bucket_size 64;
+    ...
+}
+...
+```
+Posteriormente, hago una prueba para asegurarse de que no haya errores de sintaxis en ninguno de misarchivos de Nginx:
+
+```bash
+nginx -t
+```
+
+El cual me devuelve que no hay errores
+
+![image](https://user-images.githubusercontent.com/91189372/205498588-f3b3b1a8-0507-4d90-8286-364de16d8062.png)
+
+Reinicio Nginx para habilitar sus cambios:
+
+```bash
+systemctl restart nginx
+```
 
 
-# Añadir soporte PHP a Lighttpd
 
