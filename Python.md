@@ -99,7 +99,7 @@ Ahora debo configurar el fichero virtual host de la siguiente manera:
 
 ```bash
 cd /etc/apache2/sites-available
-nano python-web
+nano ddepartamentos.centro.conf
 ```
 
 ![image](https://user-images.githubusercontent.com/91189372/205459911-3eb5da97-fd45-4ff4-be2f-ac3c92b3ce3e.png)
