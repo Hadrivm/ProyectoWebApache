@@ -75,11 +75,33 @@ HostAliases="departamentos.centro.intranet localhost 127.0.0.1"
 
 ![image](https://user-images.githubusercontent.com/91189372/205605465-88cb85c7-c366-4b94-9bc1-8c80bbb7a70a.png)
 
-
-Guardo y cierro, permito www-data leer los logs de Apache usando el siguiente comando:
+Edito los siguiente parámetros:
 
 ```bash
-setfacl -R -m "u:www-data:rx" /var/log/apache2/
+AllowToUpdateStatsFromBrowser=1
+LogFile=”/var/log/apache2/access.log”
+```
+
+Después ejecuto los siguientes comandos:
+
+```bash
+sudo /usr/lib/cgi-bin/awstats.pl -config=centro.intranet -update
+```
+
+Permito www-data leer los logs de Apache usando los siguientes comando:
+
+```bash
+cp -r /usr/lib/cgi-bin /var/www/html/
+chown -R www-dat
+www-data /var/www/html/cgi-bin/
+chmod -R 755 /var/www/html/cgi-bin/
+```
+
+Por último, escribo lo siguiente en el navegador:
+
+```
+http://127.0.0.1/cgi-bin/awstats.pl?config=departamentos.centro.intranet
+
 ```
 
 
